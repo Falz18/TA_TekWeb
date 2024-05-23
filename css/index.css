@@ -5,7 +5,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
-  
+
 .navbar {
     position: fixed;
     background-color: #fff;
@@ -15,17 +15,21 @@ body {
     align-items: center;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
-  
+
 .logo {
     height: 80px;
     margin-left: 30px;
 }
-  
+
 .menu {
     display: flex;
 }
-  
+
 .daftar-menu {
     list-style: none;
     display: flex;
@@ -33,25 +37,25 @@ body {
     margin: 15px;
     margin-right: 30px;
 }
-  
+
 .menu-item {
     margin-left: 20px;
 }
-  
+
 .menu-item a {
-    font-family: "Ubuntu",sans-serif;
+    font-family: "Ubuntu", sans-serif;
     text-decoration: none;
     color: #333;
     font-size: 22px;
     font-weight: bolder;
 }
-  
+
 .menu-item a:hover {
     color: #333;
 }
 
 .k-1 {
-    margin-top: 110px !important; 
+    margin-top: 110px !important;
 }
 
 .content-container {
@@ -67,7 +71,7 @@ body {
     text-align: left;
 }
 
-.judul{
+.judul {
     font-family: "Montserrat", sans-serif;
     font-size: 55px;
     font-weight: bolder;
@@ -86,12 +90,12 @@ body {
     height: auto;
 }
 
-.k-4{
+.k-4 {
     background-color: #333 !important;
     color: #fff;
 }
 
-.k-6{
+.k-6 {
     background-color: #333 !important;
     color: #fff;
 }
@@ -100,17 +104,10 @@ body {
     text-align: center;
 }
 
-.terbukti-text{
-    font-style: italic;
-    font-size: larger;
-    font-weight: bolder;
-}
-
 .portfolio-text {
     font-size: 40px;
     color: #add8e6;
 }
-
 
 .portfolio-images {
     display: flex;
@@ -118,8 +115,6 @@ body {
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .portfolio-images img {
@@ -134,70 +129,27 @@ body {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: auto;
 }
 
 .footer-container {
-    width: 100%;
-    max-width: 1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
+    flex-wrap: wrap;
 }
 
 .footer-left, .footer-center, .footer-right {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin: 10px;
 }
 
-.footer-left {
-    align-items: flex-start;
-    text-align: left;
-    font-size: 20px;
-    font-family: "Ubuntu",sans-serif;
-    font-weight: 600;
+.footer-left p, .footer-center p, .footer-right p {
+    margin: 5px 0;
 }
 
-.footer-center {
-    display: flex;
-    justify-content: center;
-}
-
-.footer-right {
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-}
-
-.client-logo {
-    max-width: 100px;
-    margin: 0 10px;
-}
-
-.social-icon {
-    width: 30px;
-    margin: 0 10px;
-}
-
-@media only screen and (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-    }
-
-    .footer-left, .footer-center, .footer-right {
-        align-items: center;
-    }
-
-    .footer-left, .footer-right {
-        margin-bottom: 10px;
-    }
+.client-logo, .social-icon {
+    margin: 5px;
+    height: 40px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -208,17 +160,6 @@ body {
     .judul {
         font-size: 24px;
     }
-
-    .portfolio-images {
-        flex-direction: column;
-    }
-
-    .portfolio-images img {
-        width: 80%;
-        margin: 10px;
-    }
-
-
 }
 
 @media only screen and (max-width: 425px) {
